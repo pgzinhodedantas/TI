@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+
+body{
+    background-image: linear-gradient(black);
+}
+
+p{
+    color: black;
+}
