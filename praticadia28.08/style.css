@@ -1,0 +1,85 @@
+
+
+
+
+:root{
+    --primary:#f8b5d6;
+    --secondary: #fce4ec;
+    --accent:#e91e63;
+    --dark: #7b1fa2;
+    --light:#ffffff;
+    --text:#4a2a3a;
+}
+
+body{
+font-family: 'poppins', sans-serif;
+background-color: var(--light);
+color: var(--text);
+line-height: 1.6;
+overflow-x: hidden;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200PX;
+    margin: auto;
+    padding: 0 15PX;
+}
+
+/*header*/
+header{
+    background-color: #ffffff;
+    box-shadow: 0 2PX 15PX rgba(0,0,0,1);
+    position: fixed;
+    width: 100px;
+    top: 0;
+    z-index: 1000;
+}
+.header-contaner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px O;
+}
+.LOGO {
+    font-family: 'DANCING SCRIPT', cursive;
+    font-size: 2.5REM;
+    color: var(--dark);
+    text-decoration: none;
+}
+.LOGO SPAN{
+    color: var(--dark);
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin-left: 30px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color:var(--text);
+    font-weight: 500;
+    transition:COLOR 0.3s;
+}
+nav ul li a:hover{
+    color: var(--accent);
+}
+.BTN{
+    display: inline-block;
+    background-color: var(--accent);
+    color: white;
+    padding: 12px 30PX;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight:500;
+    transition: all 0.3S ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+
+
