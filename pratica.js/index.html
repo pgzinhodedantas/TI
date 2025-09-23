@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>adivinha o número secreto</title>
+</head>
+<body>
+    <div  class="container">
+<h1>adivinha o número</h1>
+<p>tente adivinhar o Numero que estou pensando entre 1 e 100</p>
+<p>você tem <span id="chancesrestantes">10</span>chances</p>
+
+<div class="input-area">
+    <label for="campopalpite">digital seu palpite:</label>
+    <input type="number" id="campopalpite" min="1" max="100">
+    <button id="botaoenviar">enviar palpite</button>
+</div>
+
+<div class="resultado-area">
+<p class="mensagem"></p>
+<p class="palpite-anteriores"></p>
+<p class="dicas"></p>
+</div>
+
+<button id="botaoreiniciar" class="hidden">Reiniciar jogo</button>
+    </div>
+    
+    <script src="scritp.js" defer></script>
+</body>
+</html>
