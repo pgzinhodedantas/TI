@@ -8,7 +8,7 @@ body{
     min-height: 100vh;
     margin: 0;
     padding: 20px;
-    box-sizing: border-box;
+    box-sizing: border-box;/* inclui padding e borda no tamanho*/
 }
 
 .container {
@@ -55,3 +55,68 @@ input[type="numbur"] {
  input[type="number"]:focus {
 border-color: #f3a734;
  }
+label{
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+input[type="number"] {
+    padding: 12px 15px;
+    border: 2px solid #51dafb;
+    border-radius: 5px;
+    font-size: 1.1em;
+    width: 150px;
+    text-align: center;
+    background-color: #444a54;
+    color: #f0f0f0;
+    outline: none;
+
+}
+input[type="number"]:focus {
+border-color: #51dafb; 
+}
+button{
+    border-color: darkgreen;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 5px;
+    cursor: pointer;
+    transition: backgrond-color 0.3 ease;/* animação suave ao passar o mouse */
+}
+button:hover{
+    background-color: #21a1f1;
+}
+
+.resultado-area p {
+    font-size: 1.05em;
+    margin-top: 15px;
+    padding: 5px;
+}
+.mensagem{
+ font-weight: bold;
+ color:#f0f0f0;
+}
+.palpites-anteriores{
+font-size: 0.9em;
+color:#bbb;
+}
+.dica{
+    font-style: italic;
+    color:#ffeb3b
+}
+.hidden{
+    display: none;/* classe para esconde elemento */
+}
+
+@keyframes flashgreen {
+    0% { background-color: transparent;}
+    50% {background-color: rgba(red, 67,  54, 0.3);}
+    100% { background-color: transparent;}
+} 
+.flash-green{
+    animation: flashGreen 0.5s ease-in-out;
+}
+.flash-red{
+    animation: flashRed 0.5s ease-in-out;
+}
