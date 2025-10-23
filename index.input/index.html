@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Afazeres</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="login-box" role="region" aria-labelledby="login-title">
+    <h2 id="login-title">Bem-vindo</h2>
+
+    <form id="loginForm" action="#" method="post" novalidate>
+      <div class="form-group">
+        <label for="usuario">Usuário ou E-mail</label>
+        <input type="text" id="usuario" name="usuario" placeholder="seu@email.com" autocomplete="username" required>
+      </div>
+
+      <div class="form-group">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" placeholder="••••••••" autocomplete="current-password" required>
+      </div>
+
+      <button type="submit" class="btn-entrar">Entrar</button>
+    </form>
+  </div>
+  <script>
+    // Declaração inicial
+    const listaDeAfazeres = ["Comprar pão", "Estudar JavaScript", "Lavar louça"];
+
+    // Inspeção inicial
+    console.log("Lista inicial:", listaDeAfazeres);
+    console.log("Primeiro item (índice 0):", listaDeAfazeres[0]);
+    console.log("Quantidade de itens:", listaDeAfazeres.length);
+
+    // Adicionando novos afazeres
+    listaDeAfazeres.push("Fazer exercícios");
+    listaDeAfazeres.unshift("Agendar médico");
+    console.log("Após push e unshift:", listaDeAfazeres);
+
+    // Removendo afazeres concluídos
+    const removidoFinal = listaDeAfazeres.pop();
+    console.log("Afazer removido do final:", removidoFinal);
+
+    const removidoInicio = listaDeAfazeres.shift();
+    console.log("Afazer removido do início:", removidoInicio);
+
+    console.log("Após pop e shift:", listaDeAfazeres);
+
+    // Organizando e invertendo (sem alterar o original)
+    const listaOrganizada = [...listaDeAfazeres]; // cópia para não alterar o original
+    listaOrganizada.sort();
+    console.log("Lista organizada (ordenada):", listaOrganizada);
+
+    listaOrganizada.reverse();
+    console.log("Lista organizada (invertida):", listaOrganizada);
+
+    // Confirmação de que o original não foi alterado pela ordenação/inversão
+    console.log("Lista original (sem alterações pela organização):", listaDeAfazeres);
+  </script>
+ 
+</body>
+</html>

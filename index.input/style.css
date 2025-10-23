@@ -1,0 +1,115 @@
+
+:root{
+  --bg:#f4f7fb;
+  --card:#ffffff;
+  --primary:#2463f2;
+  --primary-hover:#1b4ecc;
+  --text:#222;
+  --muted:#666;
+  --radius:10px;
+}
+
+/* Centraliza a tela e aplica fundo suave */
+html,body{
+  height:100%;
+}
+body{
+  margin:0;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: linear-gradient(180deg, var(--bg) 0%, #eef3fb 100%);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+}
+
+/* Caixa de login */
+.login-box{
+  width:360px;
+  max-width:92%;
+  background:var(--card);
+  padding:24px;
+  border-radius:var(--radius);
+  box-shadow:0 10px 30px rgba(35,50,80,0.10);
+  border:1px solid rgba(30,40,60,0.04);
+}
+
+/* Títulos / texto dentro da caixa */
+.login-box h2{
+  margin:10 10 14px 10;
+  font-size:20px;
+  font-weight:600;
+  color:var(--text);
+}
+
+/* Agrupamento label + input */
+.form-group{
+  margin-bottom:14px;
+}
+
+/* Labels posicionados acima dos inputs */
+.login-box label{
+  display:block;
+  margin-bottom:6px;
+  font-size:13px;
+  color:var(--muted);
+  font-weight:600;
+}
+
+/* Inputs de texto e senha */
+.login-box input[type="text"],
+.login-box input[type="password"],
+.login-box input[type="email"]{
+  width:100%;
+  height:44px;
+  padding:8px 12px;
+  font-size:15px;
+  color:var(--text);
+  border:1px solid #d6dbe6;
+  border-radius:8px;
+  background: #fff;
+  box-sizing:border-box;
+  transition:box-shadow .18s ease, border-color .18s ease;
+}
+
+.login-box input[type="text"]:focus,
+.login-box input[type="password"]:focus,
+.login-box input[type="email"]:focus{
+  outline:none;
+  border-color: rgba(36,99,242,0.9);
+  box-shadow:0 6px 18px rgba(36,99,242,0.12);
+}
+
+/* Botão Entrar */
+.btn-entrar{
+  display:inline-block;
+  width:100%;
+  padding:12px 14px;
+  background:var(--primary);
+  color:#fff;
+  text-align:center;
+  font-weight:700;
+  font-size:15px;
+  border:0;
+  border-radius:8px;
+  cursor:pointer;
+  transition:background-color .15s ease, transform .08s ease, box-shadow .12s ease;
+  box-shadow:0 6px 14px rgba(36,99,242,0.12);
+}
+
+.btn-entrar:hover{
+  background:var(--primary-hover);
+  transform:translateY(-2px);
+}
+
+.btn-entrar:active{
+  transform:translateY(0);
+  box-shadow:0 4px 10px rgba(36,99,242,0.10);
+}
+
+/* Pequenos ajustes responsivos */
+@media (max-width:420px){
+  .login-box{ padding:18px; width:92%; }
+  .login-box h2{ font-size:18px; }
+  .btn-entrar{ font-size:14px; padding:10px 12px; }
